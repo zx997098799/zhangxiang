@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.taikang.imageservice.mapper.ImageMapper">
+
+    <insert id="insertImageSer" parameterType="com.taikang.imageservice.pojo.HuoquImageBo" >
+        insert into
+        huoqu_image(user_id,parter,content,sign,atime,text,ptext,purl,rtext,rurl,age,sex)
+        values(#{userId},#{parter},#{content},#{sign},#{atime},#{text},#{ptext},#{purl},#{rtext},#{rurl},#{age},#{sex})
+    </insert>
+    <select id="selectClinicInfo" resultType="com.taikang.imageservice.pojo.ClinicInfoBo">
+        select clinic_no clinicNo,clinic_name clinicName,begin,end,price,disabled from clinic_info
+    </select>
+</mapper>
