@@ -16,8 +16,13 @@ import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 import org.apache.commons.codec.binary.Hex;
-//阿萨大大纱卡纱卡计划啊看见啥看见啥开始觉得哈看机会啊航空技术大会啊哈
 //啊撒达到满速，都没那么，阿曼达买电脑 啊是大美女
+
+/**
+ * created by zhangxiang
+ * time 2018-5-8
+ * @param huoquInagebo
+ */
 @RestController
 @RequestMapping("/cooperation/server/problem")
 public class ImageController {
@@ -52,4 +57,5 @@ public class ImageController {
         List<ClinicInfoBo> clinicInfoBoList=imageService.selectClinicInfo();
         return ResponseMessage.ok(clinicInfoBoList);
     }
+    //还有另外一个方法
 }
