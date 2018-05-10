@@ -61,4 +61,5 @@ public class ImageController {
         return ResponseMessage.ok(clinicInfoBoList);
     }
     //还有另外一个方法
+    //今天还没有写
 }
