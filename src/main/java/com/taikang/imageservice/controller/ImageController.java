@@ -17,6 +17,12 @@ import java.util.List;
 
 import org.apache.commons.codec.binary.Hex;
 
+
+/**
+ * created by zhangxiang
+ * time 2018-5-8
+ * @param huoquInagebo
+ */
 @RestController
 @RequestMapping("/cooperation/server/problem")
 public class ImageController {
@@ -47,8 +53,11 @@ public class ImageController {
         huoquImageBo.setSign(sign);
         imageService.insertImageSer(huoquImageBo);
         //TODO 2.根据content智能过滤获取科室信息
-
+        System.out.println("3其改动，无需提交到master");
+        System.out.println("2期改动，需合并");
         List<ClinicInfoBo> clinicInfoBoList=imageService.selectClinicInfo();
         return ResponseMessage.ok(clinicInfoBoList);
     }
+    //还有另外一个方法
+    //今天还没有写
 }
