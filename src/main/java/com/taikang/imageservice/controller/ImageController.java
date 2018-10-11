@@ -54,6 +54,7 @@ public class ImageController {
         imageService.insertImageSer(huoquImageBo);
         //TODO 2.根据content智能过滤获取科室信息
         System.out.println("3其改动，无需提交到master");
+        System.out.println("2期改动，需合并");
         List<ClinicInfoBo> clinicInfoBoList=imageService.selectClinicInfo();
         return ResponseMessage.ok(clinicInfoBoList);
     }
