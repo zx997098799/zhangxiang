@@ -56,6 +56,8 @@ public class ImageController {
         System.out.println("3其改动，无需提交到master");
         System.out.println("2期改动，需合并");
         System.out.println("3期的第二次修改");
+        System.out.println("3期的第3次修改");
+        System.out.println("3期的第4次修改");
         List<ClinicInfoBo> clinicInfoBoList=imageService.selectClinicInfo();
         return ResponseMessage.ok(clinicInfoBoList);
     }
