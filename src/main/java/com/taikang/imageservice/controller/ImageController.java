@@ -57,4 +57,7 @@ public class ImageController {
     }
     //还有另外一个方法
     //今天还没有写
+    public static void main(String[] args) {
+        System.out.println("今天是三期第一次修改");
+    }
 }
