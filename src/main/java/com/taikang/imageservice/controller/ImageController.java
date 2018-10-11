@@ -46,8 +46,8 @@ public class ImageController {
         MessageDigest md5 = MessageDigest.getInstance("MD5");
         byte[] srcBytes = info.getBytes();
         md5.update(srcBytes);
-        byte[] resultBytes = md5.digest();
-        String resultString = new String(new Hex().encode(resultBytes));
+        byte[] resultBytes123456 = md5.digest();
+        String resultString = new String(new Hex().encode(resultBytes123456));
          String sign= resultString.substring(8, 24);
 
         huoquImageBo.setSign(sign);
